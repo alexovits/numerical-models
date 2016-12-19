@@ -4,6 +4,7 @@ function plotting(F, Fd, start, endi, pre)
     [H] = hermite(x ,F(x), Fd(x), z);
     hold on;
     plot(z, F(z), 'r-');
+    pause();
     plot(z, H, 'b-');
     axis([start endi start endi]);
 end
